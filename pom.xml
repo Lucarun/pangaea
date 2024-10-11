@@ -16,6 +16,8 @@
         <developer/>
     </developers>
     <modules>
+        <module>azure</module>
+        <module>rosefinch</module>
         <module>suzaku</module>
     </modules>
     <scm>

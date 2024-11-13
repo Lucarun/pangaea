@@ -6,7 +6,6 @@ package edu.fudan.rosefinch.lib.notification;
  * Description:
  */
 public class Main {
-
     public static void main(String[] args) {
         assert(args.length > 0);
         String content = String.valueOf(args[0]); // source
@@ -19,5 +18,4 @@ public class Main {
         Notification smsNotification = new SMSNotification();
         smsNotification.sendNotification(msg); // unsafe
     }
-
 }

@@ -45,4 +45,9 @@ public class AccessPathExample {
         // 深度为3的访问路径：company.employee.address.city
         System.out.println(company.getEmployee().getAddress().getCity());
     }
+
+
+    public static void leak(Company company){
+
+    }
 }

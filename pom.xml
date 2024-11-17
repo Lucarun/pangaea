@@ -15,11 +15,10 @@
     <developers>
         <developer/>
     </developers>
-    <modules>
-        <module>azure</module>
-        <module>rosefinch</module>
-        <module>suzaku</module>
-    </modules>
+<!--    <modules>-->
+<!--        <module>azure</module>-->
+<!--        <module>rosefinch</module>-->
+<!--    </modules>-->
     <scm>
         <connection/>
         <developerConnection/>

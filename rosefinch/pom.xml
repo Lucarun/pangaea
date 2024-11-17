@@ -2,12 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.3.4</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
+
 	<groupId>edu.fudan</groupId>
 	<artifactId>rosefinch</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -28,23 +23,72 @@
 	</scm>
 	<properties>
 		<java.version>17</java.version>
+		<junit.version>5.10.3</junit.version>
+		<lombok.version>1.18.34</lombok.version>
 	</properties>
 	<dependencies>
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.34</version>
+			<version>${lombok.version}</version>
+		</dependency>
+
+		<!-- JUnit 5 Jupiter API -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter</artifactId>
+			<version>5.10.0</version>
+			<scope>test</scope>
+		</dependency>
+
+
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.junit.vintage</groupId>
+			<artifactId>junit-vintage-engine</artifactId>
+			<version>5.10.0</version>
+			<scope>test</scope>
 		</dependency>
 
 	</dependencies>
 
 	<build>
 		<plugins>
+
+			<plugin>
+				<groupId>org.example</groupId> <!-- 插件的 groupId -->
+				<artifactId>instrument-maven-plugin</artifactId> <!-- 插件的 artifactId -->
+				<version>1.0-SNAPSHOT</version> <!-- 插件版本 -->
+				<executions>
+					<execution>
+						<id>instrument-tests</id> <!-- 给这次执行起个唯一ID -->
+						<phase>process-test-classes</phase> <!-- 绑定到的生命周期阶段 -->
+						<goals>
+							<goal>instrument-tests</goal> <!-- 插件中的目标任务 -->
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+
+
+
 			<!-- java编译插件 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>7</source>
+					<target>7</target>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -75,6 +119,22 @@
 					</execution>
 				</executions>
 			</plugin>
+
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.2.0</version>
+				<executions>
+					<execution>
+						<id>test-jar</id>
+						<goals>
+							<goal>test-jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
 		</plugins>
 
 	</build>

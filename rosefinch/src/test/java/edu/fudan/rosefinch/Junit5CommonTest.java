@@ -1,8 +1,6 @@
 package edu.fudan.rosefinch;
 
-import edu.fudan.rosefinch.poly.EncryptorFactory;
-import edu.fudan.rosefinch.poly.IEncryptor;
-import edu.fudan.rosefinch.poly.Person;
+import edu.fudan.rosefinch.poly.*;
 import org.junit.jupiter.api.Test;
 
 import java.io.FileInputStream;
@@ -25,9 +23,20 @@ public class Junit5CommonTest {
     void encryptorTest(){
         Person p = new Person(null, "Luca");
         IEncryptor encryptor = getEncryptor(getType());
+
         Person encryptedPerson = getEncryptedInfo(encryptor, p);
         System.out.println(encryptedPerson);
     }
+
+
+    @Test
+    void encryptorImplTest(){
+        Person p = new Person(null, "Luca");
+        NameEncryptor cityEncryptor = new NameEncryptor();
+        Person encryptedPerson = getEncryptedInfo(cityEncryptor, p);
+        System.out.println(encryptedPerson);
+    }
+
 
     // suppose no idea about the concrete return type
     public IEncryptor getEncryptor(String type){

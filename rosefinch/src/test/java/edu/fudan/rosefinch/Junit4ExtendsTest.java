@@ -18,4 +18,19 @@ public class Junit4ExtendsTest extends TestCase {
         System.out.println("test parseMap in extends");
     }
 
+
+    public void testParseString(){
+        String s = getString();
+        String finalStr = transfer(s);
+        System.out.println("finalStr : " + finalStr);
+    }
+
+    private String getString(){
+        return "Luca";
+    }
+
+    private String transfer(String str){
+        return str + "test";
+    }
+
 }

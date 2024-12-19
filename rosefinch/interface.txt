@@ -1,0 +1,21 @@
+Parameter 1 in method edu.fudan.rosefinch.Junit5CommonTest.getEncryptedInfo(edu.fudan.rosefinch.poly.IEncryptor,edu.fudan.rosefinch.poly.Person) is of type edu.fudan.rosefinch.poly.IEncryptor. Actual implementation: edu.fudan.rosefinch.poly.NameEncryptor
+Parameter 1 in method edu.fudan.rosefinch.Junit5CommonTest.getEncryptedInfo(edu.fudan.rosefinch.poly.IEncryptor,edu.fudan.rosefinch.poly.Person) is of type edu.fudan.rosefinch.poly.IEncryptor. Actual implementation: edu.fudan.rosefinch.poly.NameEncryptor
+
+
+
+
+我希望格式soot的签名格式，
+Caller is <edu.fudan.rosefinch.Junit5CommonTest: void encryptorTest()>
+Parameter 1 in <edu.fudan.rosefinch.Junit5CommonTest: edu.fudan.rosefinch.poly getEncryptedInfo(edu.fudan.rosefinch.poly.IEncryptor,edu.fudan.rosefinch.poly.Person).> Actual implementation: edu.fudan.rosefinch.poly.NameEncryptor
+
+
+
+
+<com.aliyuncs.transform.UnmarshallerContext: java.lang.String stringValue(java.lang.String)>Parameter 1 in method edu.fudan.rosefinch.Junit5CommonTest.getEncryptedInfo(edu.fudan.rosefinch.poly.IEncryptor,edu.fudan.rosefinch.poly.Person) is of type edu.fudan.rosefinch.poly.IEncryptor. Actual implementation: edu.fudan.rosefinch.poly.NameEncryptor
+Parameter 1 in method edu.fudan.rosefinch.Junit5CommonTest.getEncryptedInfo(edu.fudan.rosefinch.poly.IEncryptor,edu.fudan.rosefinch.poly.Person) is of type edu.fudan.rosefinch.poly.IEncryptor. Actual implementation: edu.fudan.rosefinch.poly.NameEncryptor
+Parameter 1 in method edu.fudan.rosefinch.ApplicationTests.getEncryptedInfo(edu.fudan.rosefinch.poly.IEncryptor,edu.fudan.rosefinch.poly.Person) is of type edu.fudan.rosefinch.poly.IEncryptor. Actual implementation: edu.fudan.rosefinch.poly.NameEncryptor
+Parameter 1 in method edu.fudan.rosefinch.Junit5CommonTest.getEncryptedInfo(edu.fudan.rosefinch.poly.IEncryptor,edu.fudan.rosefinch.poly.Person) is of type edu.fudan.rosefinch.poly.IEncryptor. Actual implementation: edu.fudan.rosefinch.poly.NameEncryptor
+Parameter 1 in method edu.fudan.rosefinch.Junit5CommonTest.getEncryptedInfo(edu.fudan.rosefinch.poly.IEncryptor,edu.fudan.rosefinch.poly.Person) is of type edu.fudan.rosefinch.poly.IEncryptor. Actual implementation: edu.fudan.rosefinch.poly.NameEncryptor
+Parameter 1 in method edu.fudan.rosefinch.ApplicationTests.getEncryptedInfo(edu.fudan.rosefinch.poly.IEncryptor,edu.fudan.rosefinch.poly.Person) is of type edu.fudan.rosefinch.poly.IEncryptor. Actual implementation: edu.fudan.rosefinch.poly.NameEncryptor
+Parameter 1 in method edu.fudan.rosefinch.Junit5CommonTest.getEncryptedInfo(edu.fudan.rosefinch.poly.IEncryptor,edu.fudan.rosefinch.poly.Person) is of type edu.fudan.rosefinch.poly.IEncryptor. Actual implementation: edu.fudan.rosefinch.poly.NameEncryptor
+Parameter 1 in method edu.fudan.rosefinch.Junit5CommonTest.getEncryptedInfo(edu.fudan.rosefinch.poly.IEncryptor,edu.fudan.rosefinch.poly.Person) is of type edu.fudan.rosefinch.poly.IEncryptor. Actual implementation: edu.fudan.rosefinch.poly.NameEncryptor

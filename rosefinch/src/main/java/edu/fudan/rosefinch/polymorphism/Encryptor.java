@@ -19,9 +19,9 @@ public abstract class Encryptor {
         }
         return encryptor.encrypt(s);
     }
-    class Sign{
-        String header;
-        String content;
+    public class Sign{
+        public String header;
+        public String content;
     }
 }
 
